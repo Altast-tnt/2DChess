@@ -1,0 +1,33 @@
+# --- Результаты сборки ---
+build/
+bin/
+obj/
+
+# --- Бинарные файлы и библиотеки ---
+*.o
+*.a
+*.so
+*.exe
+*.out
+ChessGame
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+*.cmake
+
+# --- Редакторы и IDE ---
+.vscode/
+.idea/
+*.cbp
+*.layout
+*.depend
+
+# --- Временные файлы Linux ---
+*~
+*.swp
+*.swo
+.DS_Store

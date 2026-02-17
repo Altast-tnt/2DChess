@@ -1,0 +1,3 @@
+[submodule "oxygine-framework"]
+	path = oxygine-framework
+	url = https://github.com/oxygine/oxygine-framework.git
