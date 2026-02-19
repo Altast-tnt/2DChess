@@ -1,10 +1,8 @@
 #pragma once
 #include "oxygine-framework.h"
-#include <string>
 
 using namespace oxygine;
 
-// Типы и цвета
 enum class PType { Pawn, Rook, Knight, Bishop, Queen, King };
 enum class PColor { White, Black };
 
@@ -19,6 +17,7 @@ public:
     {
         setResAnim(res.get());
         setAnchor(0.5f, 0.5f); 
+        setBlendMode(blend_alpha);
     }
     
     void setSelected(bool s) {
@@ -27,5 +26,4 @@ public:
     }
 };
 
-// Умный указатель для фигур
 DECLARE_SMART(Piece, spPiece);

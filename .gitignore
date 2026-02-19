@@ -9,6 +9,7 @@ obj/
 *.so
 *.exe
 *.out
+# Игнорируем сам исполняемый файл
 ChessGame
 
 # --- CMake ---
@@ -18,6 +19,9 @@ cmake_install.cmake
 Makefile
 install_manifest.txt
 *.cmake
+# База данных для инструментов автодополнения (LSP)
+compile_commands.json
+.cmake/
 
 # --- Редакторы и IDE ---
 .vscode/
@@ -25,9 +29,14 @@ install_manifest.txt
 *.cbp
 *.layout
 *.depend
+*.user
 
-# --- Временные файлы Linux ---
+# --- Временные файлы системы ---
 *~
 *.swp
 *.swo
 .DS_Store
+Thumbs.db
+
+# --- Oxygine специфичное ---
+*.log
